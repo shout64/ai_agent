@@ -1,8 +1,8 @@
 import os
 
-def get_files_info(working_directory, directory=None):
+def get_files_info(working_directory, directory="."):
     if directory != None:
-        full_path = os.path.join(working_directory, str(directory))
+        full_path = os.path.join(working_directory, directory)
     else:
         full_path = working_directory
     
